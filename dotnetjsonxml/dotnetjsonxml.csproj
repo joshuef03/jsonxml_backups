@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <!-- Newtonsoft.Json for JSON serialization -->
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+
+        <!-- Oracle Managed Data Access -->
+        <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="23.5.0" />
+
+        <!-- MySql.Data for MySQL -->
+        <PackageReference Include="MySql.Data" Version="8.0.33" />
+
+        <!-- Npgsql for PostgreSQL -->
+        <PackageReference Include="Npgsql" Version="7.0.0" />
+
+        <!-- System.Data.SqlClient for SQL Server -->
+        <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+    </ItemGroup>
+
+</Project>
