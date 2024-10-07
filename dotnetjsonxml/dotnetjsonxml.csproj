@@ -15,10 +15,10 @@
         <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="23.5.0" />
 
         <!-- MySql.Data for MySQL -->
-        <PackageReference Include="MySql.Data" Version="8.0.33" />
+        <PackageReference Include="MySql.Data" Version="9.0.0" />
 
         <!-- Npgsql for PostgreSQL -->
-        <PackageReference Include="Npgsql" Version="7.0.0" />
+        <PackageReference Include="Npgsql" Version="8.0.3" />
 
         <!-- System.Data.SqlClient for SQL Server -->
         <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />

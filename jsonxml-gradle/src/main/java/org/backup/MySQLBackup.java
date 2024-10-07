@@ -30,16 +30,16 @@ public class MySQLBackup {
                 JSONObject record = new JSONObject();
                 record.put("id_producto", resultSet.getString("id_producto"));
                 record.put("descripcion", resultSet.getString("descripcion"));
-                record.put("costo", resultSet.getInt("costo"));
-                record.put("precio", resultSet.getInt("precio"));
+                record.put("costo", resultSet.getDouble("costo"));
+                record.put("precio", resultSet.getDouble("precio"));
                 jsonArray.put(record);
 
                 // Create XML element
                 xmlBuilder.append("  <producto>\n");
                 xmlBuilder.append("    <id_producto>").append(resultSet.getString("id_producto")).append("</id_producto>\n");
                 xmlBuilder.append("    <descripcion>").append(resultSet.getString("descripcion")).append("</descripcion>\n");
-                xmlBuilder.append("    <costo>").append(resultSet.getInt("costo")).append("</costo>\n");
-                xmlBuilder.append("    <precio>").append(resultSet.getInt("precio")).append("</precio>\n");
+                xmlBuilder.append("    <costo>").append(resultSet.getDouble("costo")).append("</costo>\n");
+                xmlBuilder.append("    <precio>").append(resultSet.getDouble("precio")).append("</precio>\n");
                 xmlBuilder.append("  </producto>\n");
             }
 

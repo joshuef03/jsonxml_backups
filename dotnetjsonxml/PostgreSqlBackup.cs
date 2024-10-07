@@ -25,15 +25,6 @@ namespace dotnetjsonxml
                         DataTable dataTable = new DataTable();
                         dataTable.Load(reader);
 
-                        // Convert numeric values to floating-point if necessary
-                        foreach (DataColumn column in dataTable.Columns)
-                        {
-                            if (column.DataType == typeof(decimal))
-                            {
-                                column.DataType = typeof(float);
-                            }
-                        }
-
                         // Export to JSON
                         ExportToJson(dataTable, "postgres_backup.json");
 

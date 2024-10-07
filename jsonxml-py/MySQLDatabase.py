@@ -1,6 +1,7 @@
 import mysql.connector
 import pandas as pd
 import json
+from decimal import Decimal
 
 
 class MySQLDatabase:
@@ -22,13 +23,19 @@ class MySQLDatabase:
         self.connection.close()
 
 
+def decimal_default(obj):
+    if isinstance(obj, Decimal):
+        return float(obj)
+    raise TypeError(f"Object of type {obj.__class__.__name__} is not JSON serializable")
+
+
 def export_to_json(cursor, file_path):
     rows = cursor.fetchall()
     columns = [desc[0] for desc in cursor.description]
     data = [dict(zip(columns, row)) for row in rows]
 
     with open(file_path, 'w') as json_file:
-        json.dump(data, json_file, indent=4)
+        json.dump(data, json_file, indent=4, default=decimal_default)
 
 
 def export_to_xml(cursor, file_path):

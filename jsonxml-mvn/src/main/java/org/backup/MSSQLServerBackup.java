@@ -12,9 +12,9 @@ import javax.swing.*;
 public class MSSQLServerBackup {
     public static void main(String[] args) {
         // MSSQLServer Connection = "jdbc:sqlserver://URL:PORT;databaseName=###"
-        String jdbcUrl = "jdbc:sqlserver://localhost:1433;databaseName=BDPRODUCTO";
+        String jdbcUrl = "jdbc:sqlserver://localhost:1433;databaseName=BDPRODUCTO;encrypt=false";
         String username = "sa";
-        String password = "MQL123";
+        String password = "MS3123";
         String query = "SELECT id_producto, descripcion, costo, precio FROM producto";
 
         try (Connection connection = DriverManager.getConnection(jdbcUrl, username, password);

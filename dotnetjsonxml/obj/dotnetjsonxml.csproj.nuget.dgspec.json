@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\patri\\Documents\\json.xml.examples-main\\dotnetjsonxml\\dotnetjsonxml.csproj": {}
+    "D:\\My Docs\\yoshi\\Looby\\Universidad\\BaseDeDatos\\jsonxml_backups-main\\dotnetjsonxml\\dotnetjsonxml.csproj": {}
   },
   "projects": {
-    "C:\\Users\\patri\\Documents\\json.xml.examples-main\\dotnetjsonxml\\dotnetjsonxml.csproj": {
+    "D:\\My Docs\\yoshi\\Looby\\Universidad\\BaseDeDatos\\jsonxml_backups-main\\dotnetjsonxml\\dotnetjsonxml.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\patri\\Documents\\json.xml.examples-main\\dotnetjsonxml\\dotnetjsonxml.csproj",
+        "projectUniqueName": "D:\\My Docs\\yoshi\\Looby\\Universidad\\BaseDeDatos\\jsonxml_backups-main\\dotnetjsonxml\\dotnetjsonxml.csproj",
         "projectName": "dotnetjsonxml",
-        "projectPath": "C:\\Users\\patri\\Documents\\json.xml.examples-main\\dotnetjsonxml\\dotnetjsonxml.csproj",
+        "projectPath": "D:\\My Docs\\yoshi\\Looby\\Universidad\\BaseDeDatos\\jsonxml_backups-main\\dotnetjsonxml\\dotnetjsonxml.csproj",
         "packagesPath": "C:\\Users\\patri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\patri\\Documents\\json.xml.examples-main\\dotnetjsonxml\\obj\\",
+        "outputPath": "D:\\My Docs\\yoshi\\Looby\\Universidad\\BaseDeDatos\\jsonxml_backups-main\\dotnetjsonxml\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\patri\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -40,7 +40,7 @@
           "dependencies": {
             "MySql.Data": {
               "target": "Package",
-              "version": "[8.0.33, )"
+              "version": "[9.0.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -48,7 +48,7 @@
             },
             "Npgsql": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[8.0.3, )"
             },
             "Oracle.ManagedDataAccess.Core": {
               "target": "Package",
